@@ -5,20 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> js</title>
+    <style>
+        .container {
+    display: flex;
+   justify-content: space-evenly;
+    
+}
+        .w-d{text-align: center;}
+    </style>
 </head>
 <body>
      
+    <h1 style="color: white;background-color: black;text-align: center;">তোমাদের সবাইকে স্বাগতম</h1>
+   <h1 style="color:rgba(0, 0, 0, 0.705);background:Yellow;text-align: center;">এটা শুধুমাত্র বিনোদনের জন্য বানানো হয়েছে কেউ সিরিয়াসলি কোন কিছু নিবেন না </h1>
+      <div class="container"> 
+    <div class="w-d">
+    <h4>Enter your name</h4>
+    <button onclick="myFunction()">Try it</button>
    <p id="demo"></p>
+</div>
    
-   <h1 style="text-align:center; color: white;background-color: black;">kayom napisa asle nasta kawabi kinto napisa mane n </h1>
-   <h1 style="text-align:center; color:rgba(0, 0, 0, 0.705);background:Yellow;">Mizan Tahmina asle toi kawabi mane T </h1>
-
-<marquee behavior="" direction="right">hi mizan and kayom chack your partnar name frist letter . my frist letter z . What about you?</marquee>
-<marquee behavior="rotet" direction="">opore refress kor ta hole  dekbi . jeta letter asbe oi ta bolbi  chit korbina kew  . jinis ta toder jonno banaisi only </marquee>
-
-
+   
+    <div class="w-d"> 
+   <p>try করে দেখো</p>
+   <button onclick="mFunction()">Jano click me I am waiting for you</button>
+  <p id="remo"></p>
+   </div>
+</div>
     <script>
-
+alert("এসে পরলা নাকি ভাই এখন কি ওয়েব সাইটটা ভিজিট করবা? যদি করতে চাও তাইলে ওকেতে ক্লিক করো!!");
 //    let num;
 
 //    num =Math. E;
@@ -32,18 +47,33 @@
 //    let rofic = 1+Math.floor(6*Math.random());
 //    document.write(rofic)  
 
+function myFunction(){
+  var person = prompt("তোমার নাম বলে তাড়াতাড়ি কাঙ্ক্ষিত সেই ব্যক্তির নামের প্রথম Letter টা দেখে নাও ‍");
+  if (person != null) {
+    document.getElementById("demo").innerHTML =
+    "Hello " + person + "! তোমার জিবন সঙ্গীর নামের প্রথম Letter টা একদম  নিছের দিকে লক্ষ করো ?";
+  }
+}
 
-let ch;
-let a =   65 + Math.floor(26*Math.random());
-ch = String.fromCharCode(a);
-document.write(ch+"<br>")
 
+function mFunction() {
+  let ch;
+  let a =   65 + Math.floor(26*Math.random());
+  ch = String.fromCharCode(a);  
+    document.getElementById("remo").innerHTML = ch;
+} 
   
 
 
 
 
 </script>
+<br><br>
+
+<marquee behavior="" direction="right"> <strong>design by:</strong>  <span> Marouful Islam Zishan</span></h1> </marquee>
+<marquee behavior="rotet" direction=""> <strong>প্রত্যেকবার রিফ্রেস করলে একটা করে নতুন লেটার জেনারেট হবে</strong> </marquee>
+
+
 
 </body>
 </html>
